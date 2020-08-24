@@ -1,4 +1,4 @@
-package generate;
+package com.zmj.mall.dto;
 
 import java.io.Serializable;
 import lombok.Data;

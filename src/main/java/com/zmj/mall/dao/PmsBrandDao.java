@@ -1,4 +1,6 @@
-package generate;
+package com.zmj.mall.dao;
+
+import com.zmj.mall.dto.PmsBrand;
 
 /**
  * @author zmj
