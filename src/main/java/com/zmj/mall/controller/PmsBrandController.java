@@ -5,10 +5,10 @@ import com.zmj.mall.common.api.CommonPage;
 import com.zmj.mall.common.api.CommonResult;
 import com.zmj.mall.dto.PmsBrand;
 import com.zmj.mall.service.PmsBrandrService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,14 +20,15 @@ import java.util.List;
  * 品牌管理Controller
  * Created by macro on 2019/4/19.
  */
-@Controller
-@RequestMapping("/brand")
+@Api(tags = "PmsBrandController", description = "商品品牌管理")
+@RestController("/brand")
 public class PmsBrandController {
     @Resource
     private PmsBrandrService demoService;
 
     private static final Logger LOGGER = LoggerFactory.getLogger(PmsBrandController.class);
 
+    @ApiOperation("获取所有品牌列表")
     @RequestMapping(value = "listAll", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult<List<PmsBrand>> getBrandList() {
