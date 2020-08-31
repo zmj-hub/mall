@@ -1,6 +1,6 @@
 package com.zmj.mall.service;
 
-import com.zmj.mall.dto.PmsBrand;
+import com.zmj.mall.generate.model.PmsBrand;
 
 import java.util.List;
 
