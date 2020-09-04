@@ -8,6 +8,6 @@ import org.springframework.context.annotation.Configuration;
  * @author zmj
  */
 @Configuration
-@MapperScan("com.zmj.mall.generate.mapper")
+@MapperScan({"com.zmj.mall.generate.mapper","com.zmj.mall.dao"})
 public class MyBatisConfig {
 }
