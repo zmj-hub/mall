@@ -1,0 +1,12 @@
+#spring:
+#  application:
+#    name: mall
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 47.94.132.120:8848
+#      config:
+#        server-addr: 47.94.132.120:8848
+#        prefix: ${spring.application.name}
+#        file-extension: yml
+#        namespace: 734e958c-3ce7-4652-8f8a-abec6c446d1f

@@ -6,6 +6,11 @@ spring:
     url: jdbc:mysql://123.57.2.37:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
     username: root
     password: zmj@pass
+    druid:
+      initial-size: 10
+      min-idle: 6
+      max-active: 50
+      max-wait: 60000
   redis:
     host: 123.57.2.37 # Redis服务器地址
     database: 0 # Redis数据库索引（默认为0）
