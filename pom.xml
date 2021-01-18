@@ -43,15 +43,26 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <version>0.9.0.RELEASE</version>
+            <version>0.2.1.RELEASE</version>
+<!--            <version>0.9.0.RELEASE</version>-->
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-<!--            <version>0.2.1.RELEASE</version>-->
-            <version>0.9.0.RELEASE</version>
+            <version>0.2.1.RELEASE</version>
+<!--            <version>0.9.0.RELEASE</version>-->
         </dependency>
-
+        <!--消息队列相关依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+        <!--lombok依赖-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
         <!--Elasticsearch相关依赖-->
 <!--        <dependency>-->
 <!--            <groupId>org.springframework.boot</groupId>-->
